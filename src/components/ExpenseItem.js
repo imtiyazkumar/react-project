@@ -8,8 +8,6 @@ function ExpenseItem(props) {
         setTitle('updated!!!!!!!!!!!')
         console.log ('clicked!!!');
     }
-    
-    
     const date = props.date.toDateString();
 
     return (
@@ -23,5 +21,4 @@ function ExpenseItem(props) {
         </div>
     );
 }
-
 export default ExpenseItem;
