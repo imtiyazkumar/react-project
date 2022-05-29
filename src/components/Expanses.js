@@ -1,9 +1,8 @@
 import ExpenseItem from "./ExpenseItem";
 import './Expenses.css'
-import Card from "./Card";
 function Expanses(props) {
     return (
-        <Card className="expenses">
+        <div className="expenses">
             <ExpenseItem
                 title={props.item[0].title}
                 amount={props.item[0].amount}
@@ -27,7 +26,7 @@ function Expanses(props) {
                 amount={props.item[3].amount}
                 date={props.item[3].date}
             ></ExpenseItem>
-        </Card>
+            </div>
     )
 }
 
