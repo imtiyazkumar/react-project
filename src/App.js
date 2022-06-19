@@ -1,8 +1,8 @@
-import TestItem from './components/TestItem';
-import Expanses from './components/Expanses';
-import Exptest from './components/Exptest';
+import TestItem from './components/Test/TestItem';
+import NewExpanse from './components/NewExpanse/NewExpanse';
+import Expanses from './components/Expenses/Expanses';
+import Exptest from './components/Test/Exptest';
 import  './styles/index.css';
-
 function App() {
 
   const expenses = [
@@ -28,12 +28,12 @@ function App() {
   ];
   return (
     <div>
-      <h1>Lets get started</h1>
+      <h1>Lets get started with React JS</h1>
+      <NewExpanse></NewExpanse>
       <Expanses item={expenses}></Expanses>
       <TestItem></TestItem>
       <Exptest></Exptest>
     </div>
-
   );
 }
 

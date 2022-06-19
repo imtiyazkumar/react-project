@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from '../UI/Card';
 import './Exptest.css'
  function Exptest() {
         return (
