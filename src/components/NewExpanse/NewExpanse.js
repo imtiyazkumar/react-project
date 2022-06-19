@@ -2,10 +2,19 @@
 import './NewExpense.css'
 import ExpenseForm from './ExpenseForm';
 const NewExpanse = () => {
+    const saveExpenseDataHandler = (enteredExpenseData) => {
+        const expenseData = {
+            ...enteredExpenseData,
+            id: 5
+        };
+        console.log(expenseData);
+
+    }
+
     return (
         <div className='new-expense'>
             <div>Add new expense form</div>
-            <ExpenseForm></ExpenseForm>
+            <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
        </div>
         );
 }
