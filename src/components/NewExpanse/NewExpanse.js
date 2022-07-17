@@ -1,13 +1,16 @@
 // import react from "react";
 import './NewExpense.css'
 import ExpenseForm from './ExpenseForm';
-const NewExpanse = () => {
+const NewExpanse = (props) => {
+
+    
     const saveExpenseDataHandler = (enteredExpenseData) => {
         const expenseData = {
             ...enteredExpenseData,
             id: 5
         };
         console.log(expenseData);
+        props.onAddExpense(expenseData);
 
     }
 

@@ -27,6 +27,7 @@ const ExpenseForm = (props) => {
         };
         // console.log (expenseData);
         props.onSaveExpenseData(expenseData);
+
         setEnteredTitle('')
         setEnteredAmount('')
         setEnteredDate ('')
@@ -62,7 +63,5 @@ const ExpenseForm = (props) => {
     </div>
     );
 };
-
-
 
 export default ExpenseForm;
